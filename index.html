@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Достопримечательности города Магнитогорск</title>
+	<!-- не забудьте подключить СВОЙ файл стилей -->
+	<!-- не забудьте подключить СВОЙ файл с данными -->
+</head>
+<body>
+
+	<header>
+		<div class="top">
+			<h1>Самые популярные достопримечательности города Магнитогорск</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="content">
+			<div class="row">
+		<!-- первое задание -->
+			<div id="id">Привет, мир!</div>
+		<!-- второе задание -->
+			<div id="di"></div>
+		<!-- третье задание -->
+		<form>
+			<label for="name">Имя:</label>
+			<input type="text" id="name" name="name">
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			
+			<input type="submit" value="жмак">
+			</form>
+			
+		
+			
+		
+			</div>
+		</div>
+	</main>
+
+	<script>
+		//1
+	var e = document.getElementById("id");
+	e.innerHTML = "Hello, World";
+		//2
+	var p = document.createElement("p");
+	p.innerText = "Этот текст был создан динамически";
+	var t = document.getElementById("di");
+	t.appendChild(p);
+      	//3
+	document.querySelector('form').addEventListener('submit', function(f)
+	{
+	f.preventDefault();	
+	var name = document.getElementById('name').value; 
+	var email = document.getElementById('email').value; 		
+	console.log('Имя: ' + name);
+	console.log('Email: ' + email);
+	});
+
+	/*
+		Структура создаваемых блоков,
+		контент для вставки находится в файле data.js 
+		
+		<!-- Основной блок -->
+		<div class="col">
+			<!-- Изображение достопримечастельности-->
+			<img>
+			<!-- Название достопримечастельности -->
+			<p></p>
+			<!-- Текстовое описание достопримечастельности -->
+			<p></p>
+		</div>
+		*/
+
+		// Далее указан алгоритм в котором выполняется задание
+		// ... ваше решение может быть иным
+		
+
+		// создаем первый блок
+		// ...
+		
+		// вставим узлы в первый блок
+		// ...
+
+		// создаем следующие блоки клонированием
+		// ...
+
+		// вставляем контент в созданные блоки
+		// ...
+
+		// получаем ссылку на целевой элемент 
+		// ...
+		
+		// вставляем в целевой элемент созданный контент
+		// ...
+
+	</script>
+	
+</body>
+</html>
